@@ -1,27 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Лабораторная №1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tab.css">
+  </head>
+  <body>
 
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>������������ ������;</title>
-	</head>
-	<body>
-<style>
-a {text-decoration: none; font-size: 20px;}
-a:hover {text-decoration: underline;
-	color: #000002;}
-</style>
-	<center><h1>������������ ������</h1></center>
-	<p style="text-align:center"><strong><span style="font-family:Arial,Helvetica,sans-serif">������ �.�., ��������� �.�., ������ �.�.</span></strong></p>
+    <main>
+      <h2 style="text-align: right;">Студент: Колов Максим</h2>
+      <h2 style="text-align: right;">Группа: ИДБ-15-12</h2>
+  
+      
+      
+      
+    </main>
+<h2>Отчёты по лабораторным работам</h2>
 
-<hr color="#000000">
-<p style="text-align: center;"><a href="https://really1.github.io/lab1.html" target="_blank">������������ ������ �1</a></p>
-<p style="text-align: center;"><a href="https://really2.github.io/lab2.html" target="_blank">������������ ������ �2</a></p>
-<p style="text-align: center;"><a href="https://really3.github.io/lab3.html" target="_blank">������������ ������ �3</a></p>
-<p style="text-align: center;"><a href="https://really4.github.io/lab4.html" target="_blank">������������ ������ �4</a></p>
-<p style="text-align: center;"><a href="https://really5.github.io/lab5.html" target="_blank">������������ ������ �5</a></p>
-<p style="text-align: center;"><a href="https://really6.github.io/lab6.html" target="_blank">������������ ������ �6</a></p>
-<p style="text-align: center;"><a href="https://really7.github.io/lab7.html" target="_blank">������������ ������ �7</a></p>
 
-<h2 style="color: #000000; text-align: right;">&nbsp;</h2>
-	</body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Lab1')">Лабораторная №1</button>
+  <button class="tablinks" onclick="openCity(event, 'Lab2')">Лабораторная №2</button>
+  <button class="tablinks" onclick="openCity(event, 'Lab3')">Лабораторная №3</button>
+  <button class="tablinks" onclick="openCity(event, 'Lab4')">Лабораторная №4</button>
+  <button class="tablinks" onclick="openCity(event, 'Lab5')">Лабораторная №5</button>
+  <button class="tablinks" onclick="openCity(event, 'Lab6')">Лабораторная №6</button>
+  <button class="tablinks" onclick="openCity(event, 'Lab7')">Лабораторная №7</button>
+</div>
+
+<div id="Lab1" class="tabcontent">
+  <h3>Лабораторная работа №1</h3>
+  <p>
+ 
+	<h3>1. Идентификатор прецедента</h3>
+<p>Навигатор</p>
+<h3>2. Название прецедента</h3>
+<p>Разработка мобильного приложения</p>
+<h3>3. Контекст</h3>
+<p>Учебное заведение</p>
+<h3>4. Участники (actors) и цели (goals)</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 300px">
+	<tbody>
+		<tr>
+			<td>Учасник</td>
+			<td>Категория</td>
+			<td style="text-align: center;">Цель(goal)</td>
+		</tr>
+		<tr>
+			<td>Студент</td>
+			<td>Основной</td>
+			<td>Нахождение пути в учебном заведении</td>
+		</tr>
+		<tr>
+			<td>Разработчик</td>
+			<td>Внешний</td>
+			<td>Создание приложения</td>
+		</tr>
+		<tr>
+			<td>База данных</td>
+			<td>Внешний</td>
+			<td>Место хранения информации</td>
+		</tr>
+	</tbody>
+</table>
+<h3>5. Предусловия (pre-conditions)</h3>
+<ul>
+	<li>Заполнение личного кабинета</li>
+	<li>Создание запроса на поиск маршрута</li>
+</ul>
+<h3>6. Постусловия (post-conditions)</h3>
+<ul>
+	<li>Сформулирован путь до необходимой аудитории</li>
+</ul>
+<h3>7. Основной поток (main flow)</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 600px">
+	<tbody>
+		<tr>
+			<td>Участник</td>
+			<td>Действие (activity)</td>
+			<td>Ожидаемый результат</td>
+		</tr>
+		<tr>
+			<td>Студент</td>
+			<td>Создаёт запрос</td>
+			<td>Запрос в приложении</td>
+		</tr>
+		<tr>
+			<td>Приложение</td>
+			<td>Обращение к БД расписания</td>
+			<td>Определена&nbsp;необходимая аудитория</td>
+		</tr>
+		<tr>
+			<td>Приложение</td>
+			<td>Обращение к БД маршрутов</td>
+			<td>Определён необходимый маршрут</td>
+		</tr>
+		<tr>
+			<td>Приложение</td>
+			<td>Отображение найденного маршрута</td>
+			<td>Выведен результат запроса</td>
+		</tr>
+	</tbody>
+</table>
+<h3>8. Исключения (exceptions)</h3>
+<ul>
+	<li>Не верное определение маршрута</li>
+	<li>Не верный ввод данных</li>
+</ul>
+<h3>9. Альтернативы (alternates)</h3>
+<ul>
+	<li>Возможность отправки сообщения о ощибке в маршруте</li>
+	<li>Оповещение о не корректности введённых данных</li>
+</ul>
+
+	  
+	</blockquote>
+Use Case диаграмма процессов создания системы:
+  <p><img src="KolovMaksim.github.io/LR1/Create.PNG" alt="" /></p>
+Use Case диаграмма процессов использования системы:
+  <p><img src="KolovMaksim.github.io/LR1/Use.PNG" alt="" /></p>
+
+	
+	
+	
+  </p>
+</div>
+
+<div id="Lab2" class="tabcontent">
+  <h3>Лабораторная работа №2</h3>
+  
+	<p>Результаты семинара:</p>
+<p>Были распределены роли:</p>
+<h2 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; line-height: 1.25; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">РП Управление проектами - ПМ project manager - Координатор</h2>
+<p>Отличительной чертой Координаторов является способность заставлять других работать над распределенными целями. В межличностных отношениях они быстро раскрывают индивидуальные наклонности и таланты и мудро их используют для достижения целей команды. Это люди с большим кругозором и опытом, пользующиеся общим уважением команды.</p>
+
+<p>Хорошо себя проявляют, находясь во главе команды людей с различными навыками и характерами. Их девизом может быть &laquo;консультация с контролем&raquo;. Верят, что проблему можно решить мирным путем.</p>
+
+<p>Человек, целью которого является организовать рабочий процесс, следить за сроками и знать как правильно распределить задачи в команде.</p>
+
+<h2 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; line-height: 1.25; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">СП Системное программирование - реализатор - backend developer</h2>
+<p style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">Реализаторам присущи практический здравый смысл и хорошее чувство самоконтроля и дисциплины. Они любят тяжелую работу и преодоление проблем в системном режиме.</p>
+<p style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">В web-разработке люди, связанные с базами данных и серверами, пишут то, что не видит клиент. Их цель в проекте -написать основу страницы (разметку и структуру страницы). При использовании внешнего сервера или cms - их настройка и вывод информации на экран.</p>
+<h2 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; line-height: 1.25; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">ПП Прикладное программирование - исполнитель</h2>
+<p style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">Они никогда не начинают то, что не могут довести до конца. Мотивируются внутренним беспокойством, хотя часто внешне выглядят спокойными и невозмутимыми. Представители этого типа часто являются интровертами. Им обычно не требуется стимулирование извне, или побуждения. Просто программист. Тот кто работает с основным функционалом. В случае нашего проекта - тот, кто прописывает стили и js.</p>  
+	  <p>Определиться с &quot;любимыми&quot; проектами:</p>
+
+<ul>
+	<li>Приложение&nbsp;и проект&nbsp;визуализации моделей</li>
+</ul>
+<p>Определиться с &quot;любимой&quot; задачей в выбранном проекте:</p>
+
+<ul>
+	<li>программная реализация функции</li>
+</ul>
+<p>Определиться с &quot;любимым&quot; видом рисков(угроз)&nbsp;в дипломном проекте:</p>
+
+<ul>
+	<li>Нереалистичные сроки и бюджет</li>
+	<li>Разрыв между квалификацией специалистов и требованиями проекта</li>
+</ul>
+<p>Определиться с типовой стратегией управления выбранным риском:</p>
+
+<ul>
+	<li>Принятие (Acceptance)</li>
+</ul>
+<p>Определиться с основным мероприятием управления рисками в выбранной стратегии:</p>
+
+<ul>
+	<li>Повышение квалификации</li>
+</ul>
+
+	 <p><img src="KolovMaksim.github.io/LR1/diagram.PNG" alt="" /></p>
+
+   
+</div>
+
+<div id="Lab3" class="tabcontent">
+  <h3>Лабораторная работа №3</h3>
+  <p>
+	Оформить как отчёт: Диаграмма последовательностей + добавить SPA
+  </p>
+</div>
+    
+<div id="Lab4" class="tabcontent">
+  <h3>Лабораторная работа №4</h3>
+  <p></p>
+</div>
+    
+<div id="Lab5" class="tabcontent">
+  <h3>Лабораторная работа №5</h3>
+  <p></p>
+</div>
+    
+<div id="Lab6" class="tabcontent">
+  <h3>Лабораторная работа №6</h3>
+  <p></p>
+</div>
+    
+<div id="Lab7" class="tabcontent">
+  <h3>Лабораторная работа №7</h3>
+  <p></p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+  </body>
 </html>
